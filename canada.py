@@ -111,21 +111,15 @@ def main():
     if "-h" in sys.argv:
         info()
 if __name__ == '__main__':
+    if len(sys.argv) < 2:
+        info()
     if "-t" in sys.argv:
-        enc = input("Please enter txt-encoding: ")
-        ign = input("Would you like to ignore errors?\nSend \"ignore\" to yes. \nJust send enter if no.")
         main()
     if "-unt" in sys.argv:
-        enc = input("Please enter txt-encoding: ")
-        ign = input("Would you like to ignore errors?\nSend \"ignore\" to yes. \nJust send enter if no.")
         main()
     if "-q" in sys.argv:
-        enc = input("Please enter txt-encoding: ")
-        ign = input("Would you like to ignore errors?\nSend \"ignore\" to yes. \nJust send enter if no.")
         main()
     if "-unq" in sys.argv:
-        enc = input("Please enter txt-encoding: ")
-        ign = input("Would you like to ignore errors?\nSend \"ignore\" to yes. \nJust send enter if no.")
         main()
     if "-h" in sys.argv:
         info()
